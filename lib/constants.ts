@@ -18,11 +18,28 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
+/**
+ * Canonical origin for sitemap, robots, canonical tags, JSON-LD and OG images.
+ * Set NEXT_PUBLIC_SITE_URL to the real domain in production. Vercel injects
+ * VERCEL_PROJECT_PRODUCTION_URL (no scheme), which keeps preview and
+ * *.vercel.app deploys pointing at themselves rather than at a domain that
+ * may not resolve yet.
+ */
+function resolveSiteUrl() {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL;
+  if (explicit) return explicit.replace(/\/$/, "");
+
+  const vercel = process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL;
+  if (vercel) return `https://${vercel}`;
+
+  return "http://localhost:3000";
+}
+
 export const SITE = {
   name: "Fabrication Legend",
   legalName: "Fabrication Legend Aluminium Works (U) Ltd",
   slogan: "Your One Stop Interior Partner",
-  url: "https://fabricationlegend.com",
+  url: resolveSiteUrl(),
   description:
     "Aluminium and steel fabrication, ceilings, partitions and interior fit-out for construction companies and manufacturers across Uganda.",
 } as const;
