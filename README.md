@@ -75,8 +75,16 @@ accurate in both states.
 - **Photography**: the client hasn't supplied project images. Service cards use
   icons and the hero uses a geometric treatment, so real photos can drop in
   later without a redesign.
-- **Social URLs**: `SOCIALS` in `lib/constants.ts` has placeholder `#` hrefs.
-  Real profile links also populate the structured data's `sameAs` automatically.
-- **Email notification**: submissions land in Postgres only. If the client wants
-  to be emailed per enquiry, add that to the server action in
-  `app/contact/actions.ts`.
+- **Social URLs**: done. WhatsApp, Facebook, Instagram, X and TikTok are live in
+  `SOCIALS` and feed the structured data's `sameAs`. Google was dropped for want
+  of a URL; add a Google Business Profile link there if one exists.
+- **Email notification**: each enquiry is emailed via Resend to the address in
+  `CONTACT.email`, with `replyTo` set to the enquirer so you can answer by
+  replying. A send failure is logged and swallowed, never surfaced to the
+  visitor, because the enquiry is already saved.
+
+  No sending domain is verified (deliberate: the business uses a Gmail address,
+  not domain mail). Resend therefore delivers **only** to the address that owns
+  the Resend account, and mail arrives from `onboarding@resend.dev`. To notify
+  a second address later you would need to verify a domain in Resend, which is
+  DNS-only and does not require domain mailboxes.

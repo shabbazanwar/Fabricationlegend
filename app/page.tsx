@@ -8,7 +8,15 @@ export const metadata = {
   // Root-segment titles don't inherit the layout's template, so name the brand explicitly.
   title: "Fabrication Legend | Aluminium & Steel Fabrication in Uganda",
   description:
-    "Fabrication Legend Aluminium Works Uganda: aluminium doors and windows, curtain walling, steel fabrication, ceilings and interior fit-out for contractors and manufacturers.",
+    "Fabrication Legend Aluminium Works Uganda: aluminium doors and windows, curtain walling, steel fabrication, ceilings and interior fit-out for contractors and manufacturers. Get a quote for aluminium work in Kampala.",
+  keywords: [
+    "aluminium works in uganda",
+    "aluminium company uganda",
+    "aluminium fabrication kampala",
+    "quote for aluminium work uganda",
+    "steel fabrication uganda",
+    "fabrication legend",
+  ],
 };
 
 const PILLARS = [

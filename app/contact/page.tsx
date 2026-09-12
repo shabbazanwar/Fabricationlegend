@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "fabrication company uganda contact",
     "aluminium fabrication quote uganda",
     "metal fabrication kampala",
+    "quote for aluminium work uganda",
+    "aluminium works in uganda",
+    "request aluminium quote kampala",
   ],
 };
 
@@ -85,11 +88,15 @@ export default function ContactPage() {
                     {CONTACT.email}
                   </a>
                 </li>
-                <li className="flex items-center gap-3 text-sm font-medium text-brand-ink">
+                <li className="flex items-start gap-3 text-sm font-medium text-brand-ink">
                   <span className="inline-flex size-10 shrink-0 items-center justify-center bg-brand-surface text-brand-red">
                     <MapPin className="size-4" aria-hidden />
                   </span>
-                  {CONTACT.areaServed}
+                  <span className="pt-2.5 leading-relaxed">
+                    {CONTACT.address.street}
+                    <br />
+                    {CONTACT.address.locality}, {CONTACT.areaServed}
+                  </span>
                 </li>
               </ul>
             </div>

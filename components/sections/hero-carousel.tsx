@@ -31,6 +31,7 @@ const SLIDES: Slide[] = [
     body: "We fabricate and install doors, windows, curtain walling, ceilings, partitions and structural steelwork for construction companies and manufacturers across Uganda.",
     cta: { label: "Request a Quote", href: "/contact" },
     secondary: { label: "Explore Services", href: "/services" },
+    image: "/work/gates/gates-01.webp",
   },
   {
     eyebrow: "Façades & Curtain Walling",
@@ -39,6 +40,7 @@ const SLIDES: Slide[] = [
     body: "Curtain wall systems designed around wind load, drainage and thermal movement, then installed square and sealed so they stay watertight years later.",
     cta: { label: "Discuss Your Façade", href: "/contact" },
     secondary: { label: "See All Services", href: "/services" },
+    image: "/work/steel-fabrication/steel-fabrication-01.webp",
   },
   {
     eyebrow: "Interiors & Fit-Out",
@@ -47,6 +49,7 @@ const SLIDES: Slide[] = [
     body: "Gypsum and suspended ceilings, office partitioning, cabinetry, balcony grills and shading. One supplier for the whole interior envelope.",
     cta: { label: "Get a Fit-Out Quote", href: "/contact" },
     secondary: { label: "Who We Are", href: "/about" },
+    image: "/work/gypsum-ceiling/gypsum-ceiling-01.webp",
   },
 ];
 

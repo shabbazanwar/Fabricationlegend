@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "suspended ceiling uganda",
     "office partitioning kampala",
     "roller shutter doors uganda",
-    "retractable burglar bars uganda",
+    "collapsible burglar bars uganda",
     "cnc plate cutting uganda",
     "pergola shades uganda",
     "carport shades kampala",

@@ -7,8 +7,12 @@ import {
   Columns3,
   DoorOpen,
   Factory,
+  BedDouble,
+  DoorClosed,
   Fence,
   Flame,
+  Library,
+  ShowerHead,
   HardHat,
   Layers,
   LayoutGrid,
@@ -48,6 +52,11 @@ export const CONTACT = {
   phones: ["+256704478114", "+256780875785"],
   email: "fabricationlegend@gmail.com",
   areaServed: "Uganda",
+  address: {
+    street: "Naalya Road, opposite Naalya Secondary School",
+    locality: "Kampala",
+    country: "UG",
+  },
 } as const;
 
 /**
@@ -61,19 +70,22 @@ export const WHATSAPP = {
 
 export const whatsappHref = `https://wa.me/${WHATSAPP.number}?text=${encodeURIComponent(WHATSAPP.greeting)}`;
 
-/** Only WhatsApp is live; the rest await real profile URLs from the client. */
 export const SOCIALS = [
   { name: "WhatsApp", href: whatsappHref },
-  { name: "Facebook", href: "#" },
-  { name: "Instagram", href: "#" },
-  { name: "X", href: "#" },
-  { name: "Google", href: "#" },
+  { name: "Facebook", href: "https://facebook.com/fabricationlegend" },
+  {
+    name: "Instagram",
+    href: "https://instagram.com/fabrication_legend_aluminium_w",
+  },
+  { name: "X", href: "https://x.com/FabricationLeg" },
+  { name: "TikTok", href: "https://tiktok.com/@fabricationlegend" },
 ] as const;
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
@@ -90,9 +102,9 @@ export const LEGAL_LINKS = [
 
 export const LEGAL = {
   /** Bump whenever the legal pages change materially. */
-  effectiveDate: "9 September 2026",
-  /** TODO: replace with the registered physical address before launch. */
-  registeredAddress: "[Registered address to be confirmed], Uganda",
+  effectiveDate: "12 September 2026",
+  registeredAddress:
+    "Naalya Road, opposite Naalya Secondary School, Kampala, Uganda",
   /** Where the contact-form database is physically hosted (Neon, Frankfurt). */
   dataHostingRegion: "Frankfurt, Germany (eu-central-1)",
 } as const;
@@ -165,7 +177,7 @@ export const SERVICES: Service[] = [
     slug: "bathroom-cabinets",
     title: "Bathroom Cabinets",
     description:
-      "Moisture-resistant vanity and storage units built to fit the room rather than the catalogue.",
+      "Moisture-resistant vanity units and storage built to the room, finished to sit with the tiling and the shower screen.",
     icon: Bath,
   },
   {
@@ -179,7 +191,7 @@ export const SERVICES: Service[] = [
     slug: "balcony-grills-glass-works",
     title: "Balcony Grills & Glass Works",
     description:
-      "Balcony grills and professional glass installation, with security and outlook handled together.",
+      "Wrought iron and mild steel balcony grills, plus professional glass installation, so security and outlook are handled together.",
     icon: Fence,
   },
   {
@@ -205,9 +217,9 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "burglar-proofing",
-    title: "Retractable Burglar Proofing",
+    title: "Collapsible Burglar Proofing",
     description:
-      "Security bars that fold away out of sight instead of permanently barring the window.",
+      "Collapsible security grilles that fold away out of sight instead of permanently barring the window.",
     icon: ShieldCheck,
   },
   {
@@ -216,6 +228,41 @@ export const SERVICES: Service[] = [
     description:
       "Freestanding and wall-mounted carports sized to the vehicles they actually have to cover.",
     icon: Car,
+  },
+  {
+    slug: "gates",
+    title: "Gates",
+    description:
+      "Sliding and swing gates, from heavy ornate scrollwork to clean laser-cut panels, hung to run true and last.",
+    icon: DoorClosed,
+  },
+  {
+    slug: "shower-screens-glass",
+    title: "Shower Screens & Glass",
+    description:
+      "Framed and frameless shower enclosures in toughened glass, cut and sealed to the tiling as built.",
+    icon: ShowerHead,
+  },
+  {
+    slug: "fencing-boundary-walls",
+    title: "Fencing & Boundary Walls",
+    description:
+      "Perimeter railings, wall-top spikes and decorative panels that secure a plot without walling in the view.",
+    icon: Fence,
+  },
+  {
+    slug: "metal-beds",
+    title: "Metal Beds & Furniture",
+    description:
+      "Bed frames, bunks and institutional furniture welded from box section and finished in any colour.",
+    icon: BedDouble,
+  },
+  {
+    slug: "steel-shelving",
+    title: "Steel Shelving & Racking",
+    description:
+      "Boltless shelving and storage racking for shops, stores and warehouses, sized to the bay it goes in.",
+    icon: Library,
   },
 ];
 

@@ -36,6 +36,12 @@ export const metadata: Metadata = {
     "office partitioning kampala",
     "interior fit-out uganda",
     "fabrication legend",
+    "aluminium works in uganda",
+    "aluminium company uganda",
+    "aluminium fabricator kampala",
+    "aluminium windows and doors uganda",
+    "quote for aluminium work uganda",
+    "steel and aluminium fabricator uganda",
   ],
   openGraph: {
     type: "website",
@@ -68,8 +74,13 @@ const jsonLd = {
   telephone: CONTACT.phones,
   email: CONTACT.email,
   areaServed: { "@type": "Country", name: CONTACT.areaServed },
-  address: { "@type": "PostalAddress", addressCountry: "UG" },
-  // Placeholder hrefs are filtered out until the client supplies real profile URLs.
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: CONTACT.address.street,
+    addressLocality: CONTACT.address.locality,
+    addressCountry: CONTACT.address.country,
+  },
+  // Guards against any future placeholder href slipping into structured data.
   sameAs: SOCIALS.map((s) => s.href).filter((href) => href !== "#"),
   hasOfferCatalog: {
     "@type": "OfferCatalog",

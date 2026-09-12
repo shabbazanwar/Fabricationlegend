@@ -4,6 +4,7 @@ import { z } from "zod";
 import { db } from "@/lib/db";
 import { contactSubmissions } from "@/db/schema";
 import { checkRateLimit, clientKey } from "@/lib/rate-limit";
+import { sendEnquiryNotification } from "@/lib/email";
 import {
   contactSchema,
   type ContactFormState,
@@ -61,6 +62,14 @@ export async function submitContactForm(
       message:
         "We couldn't send that just now. Please call us instead and we'll pick it up right away.",
     };
+  }
+
+  // The enquiry is already saved, so a failed notification must not surface
+  // as an error to the visitor or make them submit again.
+  try {
+    await sendEnquiryNotification(parsed.data);
+  } catch (error) {
+    console.error("Failed to send enquiry notification", error);
   }
 
   return {
