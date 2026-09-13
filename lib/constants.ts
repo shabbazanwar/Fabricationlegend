@@ -181,10 +181,10 @@ export const SERVICES: Service[] = [
     icon: Bath,
   },
   {
-    slug: "gypsum-aluminium-partitions",
-    title: "Gypsum & Aluminium Partitions",
+    slug: "office-partitions",
+    title: "Office Partitions",
     description:
-      "Gypsum, glass and aluminium partitioning that divides floorplates without closing them in.",
+      "Gypsum, glass and aluminium office partitioning that divides floorplates without closing them in.",
     icon: Columns3,
   },
   {
