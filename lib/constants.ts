@@ -11,6 +11,7 @@ import {
   DoorClosed,
   Fence,
   Flame,
+  Hospital,
   Library,
   ShowerHead,
   HardHat,
@@ -130,6 +131,13 @@ export const SERVICES: Service[] = [
     description:
       "Balustrades, handrails, counters and architectural trim in grades that hold their finish.",
     icon: Layers,
+  },
+  {
+    slug: "theatre-doors",
+    title: "Theatre Doors",
+    description:
+      "Hygienic stainless steel doors for hospital operating theatres and clean rooms, built to seal tight.",
+    icon: Hospital,
   },
   {
     slug: "steel-fabrication",

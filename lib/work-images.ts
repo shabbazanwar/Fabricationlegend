@@ -55,8 +55,10 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/stainless-steel/stainless-steel-07.webp", card: "/work/stainless-steel/stainless-steel-07-card.webp" },
     { src: "/work/stainless-steel/stainless-steel-08.webp", card: "/work/stainless-steel/stainless-steel-08-card.webp" },
     { src: "/work/stainless-steel/stainless-steel-09.webp", card: "/work/stainless-steel/stainless-steel-09-card.webp" },
-    { src: "/work/stainless-steel/stainless-steel-10.webp", card: "/work/stainless-steel/stainless-steel-10-card.webp" },
-    { src: "/work/stainless-steel/stainless-steel-11.webp", card: "/work/stainless-steel/stainless-steel-11-card.webp" },
+  ],
+  "theatre-doors": [
+    { src: "/work/theatre-doors/theatre-doors-01.webp", card: "/work/theatre-doors/theatre-doors-01-card.webp" },
+    { src: "/work/theatre-doors/theatre-doors-02.webp", card: "/work/theatre-doors/theatre-doors-02-card.webp" },
   ],
   "office-partitions": [
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-01.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-01-card.webp" },
