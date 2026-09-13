@@ -6,7 +6,6 @@ import {
   Cog,
   Columns3,
   DoorOpen,
-  Factory,
   BedDouble,
   DoorClosed,
   DoorClosedLocked,
@@ -146,13 +145,6 @@ export const SERVICES: Service[] = [
     description:
       "Steel roof trusses and cladding engineered and erected for warehouses, factories and covered spans.",
     icon: Warehouse,
-  },
-  {
-    slug: "steel-fabrication",
-    title: "Steel Fabrication",
-    description:
-      "Structural and decorative steelwork cut, welded and finished in our workshop to drawing.",
-    icon: Factory,
   },
   {
     slug: "pergola-shades",

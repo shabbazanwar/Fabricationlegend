@@ -40,7 +40,7 @@ const SLIDES: Slide[] = [
     body: "Curtain wall systems designed around wind load, drainage and thermal movement, then installed square and sealed so they stay watertight years later.",
     cta: { label: "Discuss Your Façade", href: "/contact" },
     secondary: { label: "See All Services", href: "/services" },
-    image: "/work/steel-fabrication/steel-fabrication-01.webp",
+    image: "/work/curtain-wall/curtain-wall-01.webp",
   },
   {
     eyebrow: "Interiors & Fit-Out",
