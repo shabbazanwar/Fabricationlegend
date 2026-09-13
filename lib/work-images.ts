@@ -12,9 +12,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/gates/gates-06.webp", card: "/work/gates/gates-06-card.webp" },
     { src: "/work/gates/gates-07.webp", card: "/work/gates/gates-07-card.webp" },
     { src: "/work/gates/gates-08.webp", card: "/work/gates/gates-08-card.webp" },
-    { src: "/work/gates/gates-09.webp", card: "/work/gates/gates-09-card.webp" },
-    { src: "/work/gates/gates-10.webp", card: "/work/gates/gates-10-card.webp" },
-    { src: "/work/gates/gates-11.webp", card: "/work/gates/gates-11-card.webp" },
   ],
   "aluminium-doors-windows": [
     { src: "/work/aluminium-doors-windows/aluminium-doors-windows-01.webp", card: "/work/aluminium-doors-windows/aluminium-doors-windows-01-card.webp" },
