@@ -72,7 +72,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/cnc-plate-design/cnc-plate-design-05.webp", card: "/work/cnc-plate-design/cnc-plate-design-05-card.webp" },
     { src: "/work/cnc-plate-design/cnc-plate-design-06.webp", card: "/work/cnc-plate-design/cnc-plate-design-06-card.webp" },
     { src: "/work/cnc-plate-design/cnc-plate-design-07.webp", card: "/work/cnc-plate-design/cnc-plate-design-07-card.webp" },
-    { src: "/work/cnc-plate-design/cnc-plate-design-08.webp", card: "/work/cnc-plate-design/cnc-plate-design-08-card.webp" },
   ],
   "metal-beds": [
     { src: "/work/metal-beds/metal-beds-01.webp", card: "/work/metal-beds/metal-beds-01-card.webp" },
