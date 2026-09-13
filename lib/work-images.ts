@@ -170,8 +170,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/curtain-wall/curtain-wall-05.webp", card: "/work/curtain-wall/curtain-wall-05-card.webp" },
     { src: "/work/curtain-wall/curtain-wall-06.webp", card: "/work/curtain-wall/curtain-wall-06-card.webp" },
     { src: "/work/curtain-wall/curtain-wall-07.webp", card: "/work/curtain-wall/curtain-wall-07-card.webp" },
-    { src: "/work/curtain-wall/curtain-wall-08.webp", card: "/work/curtain-wall/curtain-wall-08-card.webp" },
-    { src: "/work/curtain-wall/curtain-wall-09.webp", card: "/work/curtain-wall/curtain-wall-09-card.webp" },
   ],
   "construction-works": [
     { src: "/work/construction-works/construction-works-01.webp", card: "/work/construction-works/construction-works-01-card.webp" },
