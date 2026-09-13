@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, Camera, Phone } from "lucide-react";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { CONTACT, SERVICES, SITE } from "@/lib/constants";
-import { workImages } from "@/lib/work-images";
+import { WORK_VIDEOS, workImages } from "@/lib/work-images";
 import { telHref } from "@/lib/utils";
 
 export function generateStaticParams() {
@@ -41,6 +41,7 @@ export default async function ServiceDetailPage({
   const images = workImages(slug);
   const [hero, ...rest] = images;
   const Icon = service.icon;
+  const video = WORK_VIDEOS[slug];
 
   return (
     <>
@@ -81,7 +82,17 @@ export default async function ServiceDetailPage({
             </div>
 
             <div className="relative aspect-4/3 overflow-hidden bg-white">
-              {hero ? (
+              {video ? (
+                <video
+                  src={video}
+                  poster={hero?.card}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="size-full object-cover"
+                />
+              ) : hero ? (
                 <Image
                   src={hero.src}
                   alt={`${service.title} by ${SITE.name}`}

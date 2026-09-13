@@ -21,6 +21,8 @@ type Slide = {
    * right so the copy on the left stays clear of it.
    */
   image?: string;
+  /** Full-bleed video background, takes precedence over `image` when set. */
+  video?: string;
 };
 
 const SLIDES: Slide[] = [
@@ -34,13 +36,13 @@ const SLIDES: Slide[] = [
     image: "/work/gates/gates-01.webp",
   },
   {
-    eyebrow: "Façades & Curtain Walling",
-    title: "Glazed Façades,",
-    accent: "Engineered To Hold",
-    body: "Curtain wall systems designed around wind load, drainage and thermal movement, then installed square and sealed so they stay watertight years later.",
-    cta: { label: "Discuss Your Façade", href: "/contact" },
+    eyebrow: "Custom Glass Aquariums",
+    title: "Aquariums,",
+    accent: "Built To Hold",
+    body: "Glass aquariums cut, sealed and framed to fit the space they're set in, built to hold and finished to last.",
+    cta: { label: "Discuss Your Aquarium", href: "/contact" },
     secondary: { label: "See All Services", href: "/services" },
-    image: "/work/curtain-wall/curtain-wall-01.webp",
+    video: "/work/aquariums/aquariums-01.mp4",
   },
   {
     eyebrow: "Interiors & Fit-Out",
@@ -95,7 +97,16 @@ export function HeroCarousel() {
             i === index ? "opacity-100" : "opacity-0",
           )}
         >
-          {slide.image ? (
+          {slide.video ? (
+            <video
+              src={slide.video}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="size-full object-cover"
+            />
+          ) : slide.image ? (
             <Image
               src={slide.image}
               alt=""

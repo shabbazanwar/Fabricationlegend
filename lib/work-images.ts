@@ -89,6 +89,9 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/shower-screens-glass/shower-screens-glass-04.webp", card: "/work/shower-screens-glass/shower-screens-glass-04-card.webp" },
     { src: "/work/shower-screens-glass/shower-screens-glass-05.webp", card: "/work/shower-screens-glass/shower-screens-glass-05-card.webp" },
   ],
+  "aquariums": [
+    { src: "/work/aquariums/aquariums-01.webp", card: "/work/aquariums/aquariums-01-card.webp" },
+  ],
   "gypsum-ceiling": [
     { src: "/work/gypsum-ceiling/gypsum-ceiling-01.webp", card: "/work/gypsum-ceiling/gypsum-ceiling-01-card.webp" },
     { src: "/work/gypsum-ceiling/gypsum-ceiling-02.webp", card: "/work/gypsum-ceiling/gypsum-ceiling-02-card.webp" },
@@ -182,3 +185,8 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
 
 export const workImages = (slug: string): WorkImage[] => WORK_IMAGES[slug] ?? [];
 export const heroImage = (slug: string): WorkImage | undefined => WORK_IMAGES[slug]?.[0];
+
+/** Services whose hero on the detail page is a video instead of a static photo. */
+export const WORK_VIDEOS: Record<string, string> = {
+  "aquariums": "/work/aquariums/aquariums-01.mp4",
+};

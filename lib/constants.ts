@@ -10,6 +10,7 @@ import {
   DoorClosed,
   DoorClosedLocked,
   Fence,
+  Fish,
   Hospital,
   Library,
   ShowerHead,
@@ -250,6 +251,13 @@ export const SERVICES: Service[] = [
     description:
       "Framed and frameless shower enclosures in toughened glass, cut and sealed to the tiling as built.",
     icon: ShowerHead,
+  },
+  {
+    slug: "aquariums",
+    title: "Aquariums",
+    description:
+      "Custom glass aquariums built and sealed to hold, framed to fit the space they're set in.",
+    icon: Fish,
   },
   {
     slug: "fencing-boundary-walls",
