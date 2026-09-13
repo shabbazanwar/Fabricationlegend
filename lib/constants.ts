@@ -20,6 +20,7 @@ import {
   PanelTop,
   ShieldCheck,
   Sun,
+  Warehouse,
   type LucideIcon,
 } from "lucide-react";
 
@@ -138,6 +139,13 @@ export const SERVICES: Service[] = [
     description:
       "Hygienic stainless steel doors for hospital operating theatres and clean rooms, built to seal tight.",
     icon: Hospital,
+  },
+  {
+    slug: "warehouse-roofing",
+    title: "Warehouse Roofing",
+    description:
+      "Steel roof trusses and cladding engineered and erected for warehouses, factories and covered spans.",
+    icon: Warehouse,
   },
   {
     slug: "steel-fabrication",
