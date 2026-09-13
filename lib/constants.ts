@@ -11,7 +11,6 @@ import {
   DoorClosed,
   DoorClosedLocked,
   Fence,
-  Flame,
   Hospital,
   Library,
   ShowerHead,
@@ -154,13 +153,6 @@ export const SERVICES: Service[] = [
     description:
       "Structural and decorative steelwork cut, welded and finished in our workshop to drawing.",
     icon: Factory,
-  },
-  {
-    slug: "metal-fabrication",
-    title: "Metal Fabrication",
-    description:
-      "General metalwork: gates, frames, brackets and one-off pieces made to measure rather than adapted to fit.",
-    icon: Flame,
   },
   {
     slug: "pergola-shades",

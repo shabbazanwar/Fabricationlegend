@@ -179,9 +179,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/construction-works/construction-works-02.webp", card: "/work/construction-works/construction-works-02-card.webp" },
     { src: "/work/construction-works/construction-works-03.webp", card: "/work/construction-works/construction-works-03-card.webp" },
   ],
-  "metal-fabrication": [
-    { src: "/work/metal-fabrication/metal-fabrication-01.webp", card: "/work/metal-fabrication/metal-fabrication-01-card.webp" },
-  ],
 };
 
 export const workImages = (slug: string): WorkImage[] => WORK_IMAGES[slug] ?? [];
