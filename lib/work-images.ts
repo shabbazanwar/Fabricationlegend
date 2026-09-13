@@ -63,9 +63,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-04.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-04-card.webp" },
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-05.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-05-card.webp" },
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-06.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-06-card.webp" },
-    { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-07.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-07-card.webp" },
-    { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-08.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-08-card.webp" },
-    { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-09.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-09-card.webp" },
   ],
   "cnc-plate-design": [
     { src: "/work/cnc-plate-design/cnc-plate-design-01.webp", card: "/work/cnc-plate-design/cnc-plate-design-01-card.webp" },
