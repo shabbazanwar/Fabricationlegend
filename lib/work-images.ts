@@ -115,6 +115,7 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/roller-shutters/roller-shutters-04.webp", card: "/work/roller-shutters/roller-shutters-04-card.webp" },
     { src: "/work/roller-shutters/roller-shutters-05.webp", card: "/work/roller-shutters/roller-shutters-05-card.webp" },
     { src: "/work/roller-shutters/roller-shutters-06.webp", card: "/work/roller-shutters/roller-shutters-06-card.webp" },
+    { src: "/work/roller-shutters/roller-shutters-07.webp", card: "/work/roller-shutters/roller-shutters-07-card.webp" },
   ],
   "fencing-boundary-walls": [
     { src: "/work/fencing-boundary-walls/fencing-boundary-walls-01.webp", card: "/work/fencing-boundary-walls/fencing-boundary-walls-01-card.webp" },
@@ -130,7 +131,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/burglar-proofing/burglar-proofing-03.webp", card: "/work/burglar-proofing/burglar-proofing-03-card.webp" },
     { src: "/work/burglar-proofing/burglar-proofing-04.webp", card: "/work/burglar-proofing/burglar-proofing-04-card.webp" },
     { src: "/work/burglar-proofing/burglar-proofing-05.webp", card: "/work/burglar-proofing/burglar-proofing-05-card.webp" },
-    { src: "/work/burglar-proofing/burglar-proofing-06.webp", card: "/work/burglar-proofing/burglar-proofing-06-card.webp" },
   ],
   "steel-shelving": [
     { src: "/work/steel-shelving/steel-shelving-01.webp", card: "/work/steel-shelving/steel-shelving-01-card.webp" },
