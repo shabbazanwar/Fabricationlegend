@@ -129,8 +129,10 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/burglar-proofing/burglar-proofing-01.webp", card: "/work/burglar-proofing/burglar-proofing-01-card.webp" },
     { src: "/work/burglar-proofing/burglar-proofing-02.webp", card: "/work/burglar-proofing/burglar-proofing-02-card.webp" },
     { src: "/work/burglar-proofing/burglar-proofing-03.webp", card: "/work/burglar-proofing/burglar-proofing-03-card.webp" },
-    { src: "/work/burglar-proofing/burglar-proofing-04.webp", card: "/work/burglar-proofing/burglar-proofing-04-card.webp" },
-    { src: "/work/burglar-proofing/burglar-proofing-05.webp", card: "/work/burglar-proofing/burglar-proofing-05-card.webp" },
+  ],
+  "steel-doors": [
+    { src: "/work/steel-doors/steel-doors-01.webp", card: "/work/steel-doors/steel-doors-01-card.webp" },
+    { src: "/work/steel-doors/steel-doors-02.webp", card: "/work/steel-doors/steel-doors-02-card.webp" },
   ],
   "steel-shelving": [
     { src: "/work/steel-shelving/steel-shelving-01.webp", card: "/work/steel-shelving/steel-shelving-01-card.webp" },

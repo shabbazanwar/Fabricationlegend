@@ -9,6 +9,7 @@ import {
   Factory,
   BedDouble,
   DoorClosed,
+  DoorClosedLocked,
   Fence,
   Flame,
   Hospital,
@@ -237,6 +238,13 @@ export const SERVICES: Service[] = [
     description:
       "Collapsible security grilles that fold away out of sight instead of permanently barring the window.",
     icon: ShieldCheck,
+  },
+  {
+    slug: "steel-doors",
+    title: "Steel Doors",
+    description:
+      "Wrought iron and mild steel security doors and gates, scrolled or plain, set to the opening.",
+    icon: DoorClosedLocked,
   },
   {
     slug: "carport-shades",
