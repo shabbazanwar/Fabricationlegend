@@ -73,7 +73,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/cnc-plate-design/cnc-plate-design-06.webp", card: "/work/cnc-plate-design/cnc-plate-design-06-card.webp" },
     { src: "/work/cnc-plate-design/cnc-plate-design-07.webp", card: "/work/cnc-plate-design/cnc-plate-design-07-card.webp" },
     { src: "/work/cnc-plate-design/cnc-plate-design-08.webp", card: "/work/cnc-plate-design/cnc-plate-design-08-card.webp" },
-    { src: "/work/cnc-plate-design/cnc-plate-design-09.webp", card: "/work/cnc-plate-design/cnc-plate-design-09-card.webp" },
   ],
   "metal-beds": [
     { src: "/work/metal-beds/metal-beds-01.webp", card: "/work/metal-beds/metal-beds-01-card.webp" },
@@ -145,6 +144,7 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/pergola-shades/pergola-shades-02.webp", card: "/work/pergola-shades/pergola-shades-02-card.webp" },
     { src: "/work/pergola-shades/pergola-shades-03.webp", card: "/work/pergola-shades/pergola-shades-03-card.webp" },
     { src: "/work/pergola-shades/pergola-shades-04.webp", card: "/work/pergola-shades/pergola-shades-04-card.webp" },
+    { src: "/work/pergola-shades/pergola-shades-05.webp", card: "/work/pergola-shades/pergola-shades-05-card.webp" },
   ],
   "carport-shades": [
     { src: "/work/carport-shades/carport-shades-01.webp", card: "/work/carport-shades/carport-shades-01-card.webp" },
