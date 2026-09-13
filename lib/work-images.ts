@@ -100,6 +100,14 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/gypsum-ceiling/gypsum-ceiling-06.webp", card: "/work/gypsum-ceiling/gypsum-ceiling-06-card.webp" },
     { src: "/work/gypsum-ceiling/gypsum-ceiling-07.webp", card: "/work/gypsum-ceiling/gypsum-ceiling-07-card.webp" },
   ],
+  "suspended-ceiling": [
+    { src: "/work/suspended-ceiling/suspended-ceiling-01.webp", card: "/work/suspended-ceiling/suspended-ceiling-01-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-02.webp", card: "/work/suspended-ceiling/suspended-ceiling-02-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-03.webp", card: "/work/suspended-ceiling/suspended-ceiling-03-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-04.webp", card: "/work/suspended-ceiling/suspended-ceiling-04-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-05.webp", card: "/work/suspended-ceiling/suspended-ceiling-05-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-06.webp", card: "/work/suspended-ceiling/suspended-ceiling-06-card.webp" },
+  ],
   "roller-shutters": [
     { src: "/work/roller-shutters/roller-shutters-01.webp", card: "/work/roller-shutters/roller-shutters-01-card.webp" },
     { src: "/work/roller-shutters/roller-shutters-02.webp", card: "/work/roller-shutters/roller-shutters-02-card.webp" },
