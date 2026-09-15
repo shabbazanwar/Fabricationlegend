@@ -172,7 +172,45 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
   "metal-fabrication": [
     { src: "/work/metal-fabrication/metal-fabrication-01.webp", card: "/work/metal-fabrication/metal-fabrication-01-card.webp" },
   ],
+  "signage-fabrication": [
+    { src: "/work/signage-fabrication/signage-fabrication-01.webp", card: "/work/signage-fabrication/signage-fabrication-01-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-02.webp", card: "/work/signage-fabrication/signage-fabrication-02-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-03.webp", card: "/work/signage-fabrication/signage-fabrication-03-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-04.webp", card: "/work/signage-fabrication/signage-fabrication-04-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-05.webp", card: "/work/signage-fabrication/signage-fabrication-05-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-06.webp", card: "/work/signage-fabrication/signage-fabrication-06-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-07.webp", card: "/work/signage-fabrication/signage-fabrication-07-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-08.webp", card: "/work/signage-fabrication/signage-fabrication-08-card.webp" },
+  ],
+  "security-doors": [
+    { src: "/work/security-doors/security-doors-01.webp", card: "/work/security-doors/security-doors-01-card.webp" },
+    { src: "/work/security-doors/security-doors-02.webp", card: "/work/security-doors/security-doors-02-card.webp" },
+    { src: "/work/security-doors/security-doors-03.webp", card: "/work/security-doors/security-doors-03-card.webp" },
+    { src: "/work/security-doors/security-doors-04.webp", card: "/work/security-doors/security-doors-04-card.webp" },
+    { src: "/work/security-doors/security-doors-05.webp", card: "/work/security-doors/security-doors-05-card.webp" },
+    { src: "/work/security-doors/security-doors-06.webp", card: "/work/security-doors/security-doors-06-card.webp" },
+  ],
+  "wall-cladding": [
+    { src: "/work/wall-cladding/wall-cladding-01.webp", card: "/work/wall-cladding/wall-cladding-01-card.webp" },
+    { src: "/work/wall-cladding/wall-cladding-02.webp", card: "/work/wall-cladding/wall-cladding-02-card.webp" },
+    { src: "/work/wall-cladding/wall-cladding-03.webp", card: "/work/wall-cladding/wall-cladding-03-card.webp" },
+    { src: "/work/wall-cladding/wall-cladding-04.webp", card: "/work/wall-cladding/wall-cladding-04-card.webp" },
+    { src: "/work/wall-cladding/wall-cladding-05.webp", card: "/work/wall-cladding/wall-cladding-05-card.webp" },
+    { src: "/work/wall-cladding/wall-cladding-06.webp", card: "/work/wall-cladding/wall-cladding-06-card.webp" },
+  ],
+};
+
+export type WorkVideo = { src: string; poster: string; card: string };
+
+export const WORK_VIDEOS: Record<string, WorkVideo[]> = {
+  "aquariums": [
+    { src: "/work/aquariums/aquariums-01.mp4", poster: "/work/aquariums/aquariums-01-poster.webp", card: "/work/aquariums/aquariums-01-card.webp" },
+    { src: "/work/aquariums/aquariums-02.mp4", poster: "/work/aquariums/aquariums-02-poster.webp", card: "/work/aquariums/aquariums-02-card.webp" },
+    { src: "/work/aquariums/aquariums-03.mp4", poster: "/work/aquariums/aquariums-03-poster.webp", card: "/work/aquariums/aquariums-03-card.webp" },
+    { src: "/work/aquariums/aquariums-04.mp4", poster: "/work/aquariums/aquariums-04-poster.webp", card: "/work/aquariums/aquariums-04-card.webp" },
+  ],
 };
 
 export const workImages = (slug: string): WorkImage[] => WORK_IMAGES[slug] ?? [];
 export const heroImage = (slug: string): WorkImage | undefined => WORK_IMAGES[slug]?.[0];
+export const workVideos = (slug: string): WorkVideo[] => WORK_VIDEOS[slug] ?? [];

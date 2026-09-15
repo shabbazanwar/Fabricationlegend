@@ -2,12 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { SERVICES, type Service } from "@/lib/constants";
-import { heroImage, workImages } from "@/lib/work-images";
+import { heroImage, workImages, workVideos } from "@/lib/work-images";
+
+const mediaCount = (slug: string) =>
+  workImages(slug).length + workVideos(slug).length;
 
 function ServiceCard({ service }: { service: Service }) {
   const Icon = service.icon;
   const hero = heroImage(service.slug);
-  const count = workImages(service.slug).length;
+  const videos = workVideos(service.slug);
+  // Video-only services fall back to their first clip's poster frame.
+  const cover = hero?.card ?? videos[0]?.card;
+  const photos = workImages(service.slug).length;
+  const count = photos || videos.length;
 
   return (
     <Link
@@ -15,9 +22,9 @@ function ServiceCard({ service }: { service: Service }) {
       className="group flex flex-col border border-brand-line bg-white transition-colors hover:border-brand-red"
     >
       <div className="relative aspect-4/3 overflow-hidden bg-brand-surface">
-        {hero ? (
+        {cover ? (
           <Image
-            src={hero.card}
+            src={cover}
             alt={service.title}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
@@ -35,7 +42,7 @@ function ServiceCard({ service }: { service: Service }) {
         )}
         {count > 1 && (
           <span className="absolute top-3 right-3 bg-brand-black/75 px-2.5 py-1 text-[0.7rem] font-semibold text-white backdrop-blur-sm">
-            {count} photos
+            {count} {photos ? "photos" : "videos"}
           </span>
         )}
       </div>
@@ -63,9 +70,9 @@ function ServiceCard({ service }: { service: Service }) {
 }
 
 export function ServicesGrid({ limit }: { limit?: number }) {
-  // Services with photographs lead, so the grid opens on real work.
+  // Services with photographs or video lead, so the grid opens on real work.
   const ordered = [...SERVICES].sort(
-    (a, b) => workImages(b.slug).length - workImages(a.slug).length,
+    (a, b) => mediaCount(b.slug) - mediaCount(a.slug),
   );
   const services = limit ? ordered.slice(0, limit) : ordered;
 

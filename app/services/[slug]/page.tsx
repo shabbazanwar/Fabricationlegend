@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, Camera, Phone } from "lucide-react";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { CONTACT, SERVICES, SITE } from "@/lib/constants";
-import { workImages } from "@/lib/work-images";
+import { workImages, workVideos } from "@/lib/work-images";
 import { telHref } from "@/lib/utils";
 
 export function generateStaticParams() {
@@ -39,7 +39,12 @@ export default async function ServiceDetailPage({
   if (!service) notFound();
 
   const images = workImages(slug);
+  const videos = workVideos(slug);
   const [hero, ...rest] = images;
+  // With no photographs, the first video leads the page instead.
+  const heroVideo = hero ? undefined : videos[0];
+  const galleryVideos = heroVideo ? videos.slice(1) : videos;
+  const hasGallery = rest.length > 0 || galleryVideos.length > 0;
   const Icon = service.icon;
 
   return (
@@ -80,7 +85,7 @@ export default async function ServiceDetailPage({
               </div>
             </div>
 
-            <div className="relative aspect-4/3 overflow-hidden bg-white">
+            <div className="relative aspect-4/3 overflow-hidden bg-brand-black">
               {hero ? (
                 <Image
                   src={hero.src}
@@ -90,8 +95,19 @@ export default async function ServiceDetailPage({
                   sizes="(min-width: 1024px) 55vw, 100vw"
                   className="object-cover"
                 />
+              ) : heroVideo ? (
+                <video
+                  src={heroVideo.src}
+                  poster={heroVideo.poster}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  aria-label={`${service.title} by ${SITE.name}`}
+                  className="absolute inset-0 size-full object-cover"
+                />
               ) : (
-                <span className="flex size-full items-center justify-center border border-brand-line text-brand-red">
+                <span className="flex size-full items-center justify-center border border-brand-line bg-white text-brand-red">
                   <Icon className="size-20" aria-hidden />
                 </span>
               )}
@@ -101,32 +117,61 @@ export default async function ServiceDetailPage({
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-14 sm:py-20">
-        {rest.length > 0 ? (
+        {hasGallery ? (
           <>
-            <h2 className="font-display text-2xl font-bold tracking-tight text-brand-black uppercase">
-              More {service.title}
-            </h2>
-            <p className="mt-3 max-w-2xl leading-relaxed text-brand-muted">
-              {rest.length + 1} projects photographed on site and in our
-              workshop.
-            </p>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {rest.map((image, i) => (
-                <div
-                  key={image.src}
-                  className="relative aspect-4/3 overflow-hidden bg-brand-surface"
-                >
-                  <Image
-                    src={image.card}
-                    alt={`${service.title} project ${i + 2}`}
-                    fill
-                    loading="lazy"
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-500 hover:scale-105"
-                  />
+            {rest.length > 0 && (
+              <>
+                <h2 className="font-display text-2xl font-bold tracking-tight text-brand-black uppercase">
+                  More {service.title}
+                </h2>
+                <p className="mt-3 max-w-2xl leading-relaxed text-brand-muted">
+                  {images.length} projects photographed on site and in our
+                  workshop.
+                </p>
+                <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {rest.map((image, i) => (
+                    <div
+                      key={image.src}
+                      className="relative aspect-4/3 overflow-hidden bg-brand-surface"
+                    >
+                      <Image
+                        src={image.card}
+                        alt={`${service.title} project ${i + 2}`}
+                        fill
+                        loading="lazy"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover transition-transform duration-500 hover:scale-105"
+                      />
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            )}
+
+            {galleryVideos.length > 0 && (
+              <div className={rest.length > 0 ? "mt-16" : undefined}>
+                <h2 className="font-display text-2xl font-bold tracking-tight text-brand-black uppercase">
+                  {service.title} on Video
+                </h2>
+                <p className="mt-3 max-w-2xl leading-relaxed text-brand-muted">
+                  {videos.length} clips filmed at our installations.
+                </p>
+                <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
+                  {galleryVideos.map((video, i) => (
+                    <video
+                      key={video.src}
+                      src={video.src}
+                      poster={video.poster}
+                      controls
+                      playsInline
+                      preload="none"
+                      aria-label={`${service.title} video ${i + 1}`}
+                      className="aspect-9/16 w-full bg-brand-black object-cover"
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
           </>
         ) : (
           <div className="flex gap-4 border border-brand-line bg-brand-surface p-8">

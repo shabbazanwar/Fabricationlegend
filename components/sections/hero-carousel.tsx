@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -21,6 +21,9 @@ type Slide = {
    * right so the copy on the left stays clear of it.
    */
   image?: string;
+  /** Muted looping background video; takes precedence over `image`. */
+  video?: string;
+  poster?: string;
 };
 
 const SLIDES: Slide[] = [
@@ -34,13 +37,14 @@ const SLIDES: Slide[] = [
     image: "/work/gates/gates-01.webp",
   },
   {
-    eyebrow: "Façades & Curtain Walling",
-    title: "Glazed Façades,",
-    accent: "Engineered To Hold",
-    body: "Curtain wall systems designed around wind load, drainage and thermal movement, then installed square and sealed so they stay watertight years later.",
-    cta: { label: "Discuss Your Façade", href: "/contact" },
-    secondary: { label: "See All Services", href: "/services" },
-    image: "/work/steel-fabrication/steel-fabrication-01.webp",
+    eyebrow: "Custom Aquariums",
+    title: "Glass Aquariums,",
+    accent: "Built To Size",
+    body: "Custom glass aquariums and fish tanks built to the size and setting they are going into, alongside our shower screens, partitions and glass works.",
+    cta: { label: "Enquire About An Aquarium", href: "/contact" },
+    secondary: { label: "See Aquarium Work", href: "/services/aquariums" },
+    video: "/work/aquariums/aquariums-hero.mp4",
+    poster: "/work/aquariums/aquariums-01-poster.webp",
   },
   {
     eyebrow: "Interiors & Fit-Out",
@@ -58,6 +62,17 @@ const INTERVAL = 6500;
 export function HeroCarousel() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+
+  // Only the visible slide's video plays; reduced-motion visitors keep the poster.
+  useEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    videoRefs.current.forEach((video, i) => {
+      if (!video) return;
+      if (i === index && !reduce) video.play().catch(() => undefined);
+      else video.pause();
+    });
+  }, [index]);
 
   useEffect(() => {
     if (paused) return;
@@ -95,7 +110,20 @@ export function HeroCarousel() {
             i === index ? "opacity-100" : "opacity-0",
           )}
         >
-          {slide.image ? (
+          {slide.video ? (
+            <video
+              ref={(el) => {
+                videoRefs.current[i] = el;
+              }}
+              src={slide.video}
+              poster={slide.poster}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="absolute inset-0 size-full object-cover"
+            />
+          ) : slide.image ? (
             <Image
               src={slide.image}
               alt=""

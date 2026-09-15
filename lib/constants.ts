@@ -8,11 +8,15 @@ import {
   DoorOpen,
   Factory,
   BedDouble,
+  BrickWall,
   DoorClosed,
+  DoorClosedLocked,
   Fence,
+  Fish,
   Flame,
   Library,
   ShowerHead,
+  Signpost,
   HardHat,
   Layers,
   LayoutGrid,
@@ -263,6 +267,34 @@ export const SERVICES: Service[] = [
     description:
       "Boltless shelving and storage racking for shops, stores and warehouses, sized to the bay it goes in.",
     icon: Library,
+  },
+  {
+    slug: "security-doors",
+    title: "Security Doors",
+    description:
+      "Steel entrance and security doors, from plain modern panels to laser-cut designs, made to take heavy use and still close true.",
+    icon: DoorClosedLocked,
+  },
+  {
+    slug: "wall-cladding",
+    title: "Wall Cladding",
+    description:
+      "Aluminium composite panel cladding for shopfronts and building façades, fixed on a frame and finished clean at every joint.",
+    icon: BrickWall,
+  },
+  {
+    slug: "signage-fabrication",
+    title: "Signage Fabrication",
+    description:
+      "Light boxes, 3D lettering, signposts and safety signage, made in-house for shops, offices, sites and roads.",
+    icon: Signpost,
+  },
+  {
+    slug: "aquariums",
+    title: "Aquariums",
+    description:
+      "Custom glass aquariums and fish tanks built to the size and setting they are going into.",
+    icon: Fish,
   },
 ];
 
