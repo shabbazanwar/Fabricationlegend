@@ -6,15 +6,15 @@ import {
   Cog,
   Columns3,
   DoorOpen,
-  Factory,
   BedDouble,
   BrickWall,
   DoorClosed,
   DoorClosedLocked,
   Fence,
   Fish,
-  Flame,
+  Hospital,
   Library,
+  LockKeyhole,
   ShowerHead,
   Signpost,
   HardHat,
@@ -23,6 +23,7 @@ import {
   PanelTop,
   ShieldCheck,
   Sun,
+  Warehouse,
   type LucideIcon,
 } from "lucide-react";
 
@@ -136,18 +137,18 @@ export const SERVICES: Service[] = [
     icon: Layers,
   },
   {
-    slug: "steel-fabrication",
-    title: "Steel Fabrication",
+    slug: "theatre-doors",
+    title: "Theatre Doors",
     description:
-      "Structural and decorative steelwork cut, welded and finished in our workshop to drawing.",
-    icon: Factory,
+      "Hygienic stainless steel doors for hospital operating theatres and clean rooms, built to seal tight.",
+    icon: Hospital,
   },
   {
-    slug: "metal-fabrication",
-    title: "Metal Fabrication",
+    slug: "warehouse-roofing",
+    title: "Warehouse Roofing",
     description:
-      "General metalwork: gates, frames, brackets and one-off pieces made to measure rather than adapted to fit.",
-    icon: Flame,
+      "Steel roof trusses and cladding engineered and erected for warehouses, factories and covered spans.",
+    icon: Warehouse,
   },
   {
     slug: "pergola-shades",
@@ -185,10 +186,10 @@ export const SERVICES: Service[] = [
     icon: Bath,
   },
   {
-    slug: "gypsum-aluminium-partitions",
-    title: "Gypsum & Aluminium Partitions",
+    slug: "office-partitions",
+    title: "Office Partitions",
     description:
-      "Gypsum, glass and aluminium partitioning that divides floorplates without closing them in.",
+      "Gypsum, glass and aluminium office partitioning that divides floorplates without closing them in.",
     icon: Columns3,
   },
   {
@@ -225,6 +226,13 @@ export const SERVICES: Service[] = [
     description:
       "Collapsible security grilles that fold away out of sight instead of permanently barring the window.",
     icon: ShieldCheck,
+  },
+  {
+    slug: "steel-doors",
+    title: "Steel Doors",
+    description:
+      "Wrought iron and mild steel security doors and gates, scrolled or plain, set to the opening.",
+    icon: DoorClosedLocked,
   },
   {
     slug: "carport-shades",
@@ -273,7 +281,7 @@ export const SERVICES: Service[] = [
     title: "Security Doors",
     description:
       "Steel entrance and security doors, from plain modern panels to laser-cut designs, made to take heavy use and still close true.",
-    icon: DoorClosedLocked,
+    icon: LockKeyhole,
   },
   {
     slug: "wall-cladding",

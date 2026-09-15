@@ -12,9 +12,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/gates/gates-06.webp", card: "/work/gates/gates-06-card.webp" },
     { src: "/work/gates/gates-07.webp", card: "/work/gates/gates-07-card.webp" },
     { src: "/work/gates/gates-08.webp", card: "/work/gates/gates-08-card.webp" },
-    { src: "/work/gates/gates-09.webp", card: "/work/gates/gates-09-card.webp" },
-    { src: "/work/gates/gates-10.webp", card: "/work/gates/gates-10-card.webp" },
-    { src: "/work/gates/gates-11.webp", card: "/work/gates/gates-11-card.webp" },
   ],
   "aluminium-doors-windows": [
     { src: "/work/aluminium-doors-windows/aluminium-doors-windows-01.webp", card: "/work/aluminium-doors-windows/aluminium-doors-windows-01-card.webp" },
@@ -33,17 +30,16 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/aluminium-doors-windows/aluminium-doors-windows-14.webp", card: "/work/aluminium-doors-windows/aluminium-doors-windows-14-card.webp" },
     { src: "/work/aluminium-doors-windows/aluminium-doors-windows-15.webp", card: "/work/aluminium-doors-windows/aluminium-doors-windows-15-card.webp" },
   ],
-  "steel-fabrication": [
-    { src: "/work/steel-fabrication/steel-fabrication-01.webp", card: "/work/steel-fabrication/steel-fabrication-01-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-02.webp", card: "/work/steel-fabrication/steel-fabrication-02-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-03.webp", card: "/work/steel-fabrication/steel-fabrication-03-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-04.webp", card: "/work/steel-fabrication/steel-fabrication-04-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-05.webp", card: "/work/steel-fabrication/steel-fabrication-05-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-06.webp", card: "/work/steel-fabrication/steel-fabrication-06-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-07.webp", card: "/work/steel-fabrication/steel-fabrication-07-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-08.webp", card: "/work/steel-fabrication/steel-fabrication-08-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-09.webp", card: "/work/steel-fabrication/steel-fabrication-09-card.webp" },
-    { src: "/work/steel-fabrication/steel-fabrication-10.webp", card: "/work/steel-fabrication/steel-fabrication-10-card.webp" },
+  "warehouse-roofing": [
+    { src: "/work/warehouse-roofing/warehouse-roofing-01.webp", card: "/work/warehouse-roofing/warehouse-roofing-01-card.webp" },
+    { src: "/work/warehouse-roofing/warehouse-roofing-02.webp", card: "/work/warehouse-roofing/warehouse-roofing-02-card.webp" },
+    { src: "/work/warehouse-roofing/warehouse-roofing-03.webp", card: "/work/warehouse-roofing/warehouse-roofing-03-card.webp" },
+    { src: "/work/warehouse-roofing/warehouse-roofing-04.webp", card: "/work/warehouse-roofing/warehouse-roofing-04-card.webp" },
+    { src: "/work/warehouse-roofing/warehouse-roofing-05.webp", card: "/work/warehouse-roofing/warehouse-roofing-05-card.webp" },
+    { src: "/work/warehouse-roofing/warehouse-roofing-06.webp", card: "/work/warehouse-roofing/warehouse-roofing-06-card.webp" },
+    { src: "/work/warehouse-roofing/warehouse-roofing-07.webp", card: "/work/warehouse-roofing/warehouse-roofing-07-card.webp" },
+    { src: "/work/warehouse-roofing/warehouse-roofing-08.webp", card: "/work/warehouse-roofing/warehouse-roofing-08-card.webp" },
+    { src: "/work/warehouse-roofing/warehouse-roofing-09.webp", card: "/work/warehouse-roofing/warehouse-roofing-09-card.webp" },
   ],
   "stainless-steel": [
     { src: "/work/stainless-steel/stainless-steel-01.webp", card: "/work/stainless-steel/stainless-steel-01-card.webp" },
@@ -55,19 +51,18 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/stainless-steel/stainless-steel-07.webp", card: "/work/stainless-steel/stainless-steel-07-card.webp" },
     { src: "/work/stainless-steel/stainless-steel-08.webp", card: "/work/stainless-steel/stainless-steel-08-card.webp" },
     { src: "/work/stainless-steel/stainless-steel-09.webp", card: "/work/stainless-steel/stainless-steel-09-card.webp" },
-    { src: "/work/stainless-steel/stainless-steel-10.webp", card: "/work/stainless-steel/stainless-steel-10-card.webp" },
-    { src: "/work/stainless-steel/stainless-steel-11.webp", card: "/work/stainless-steel/stainless-steel-11-card.webp" },
   ],
-  "gypsum-aluminium-partitions": [
+  "theatre-doors": [
+    { src: "/work/theatre-doors/theatre-doors-01.webp", card: "/work/theatre-doors/theatre-doors-01-card.webp" },
+    { src: "/work/theatre-doors/theatre-doors-02.webp", card: "/work/theatre-doors/theatre-doors-02-card.webp" },
+  ],
+  "office-partitions": [
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-01.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-01-card.webp" },
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-02.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-02-card.webp" },
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-03.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-03-card.webp" },
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-04.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-04-card.webp" },
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-05.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-05-card.webp" },
     { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-06.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-06-card.webp" },
-    { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-07.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-07-card.webp" },
-    { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-08.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-08-card.webp" },
-    { src: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-09.webp", card: "/work/gypsum-aluminium-partitions/gypsum-aluminium-partitions-09-card.webp" },
   ],
   "cnc-plate-design": [
     { src: "/work/cnc-plate-design/cnc-plate-design-01.webp", card: "/work/cnc-plate-design/cnc-plate-design-01-card.webp" },
@@ -77,8 +72,6 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/cnc-plate-design/cnc-plate-design-05.webp", card: "/work/cnc-plate-design/cnc-plate-design-05-card.webp" },
     { src: "/work/cnc-plate-design/cnc-plate-design-06.webp", card: "/work/cnc-plate-design/cnc-plate-design-06-card.webp" },
     { src: "/work/cnc-plate-design/cnc-plate-design-07.webp", card: "/work/cnc-plate-design/cnc-plate-design-07-card.webp" },
-    { src: "/work/cnc-plate-design/cnc-plate-design-08.webp", card: "/work/cnc-plate-design/cnc-plate-design-08-card.webp" },
-    { src: "/work/cnc-plate-design/cnc-plate-design-09.webp", card: "/work/cnc-plate-design/cnc-plate-design-09-card.webp" },
   ],
   "metal-beds": [
     { src: "/work/metal-beds/metal-beds-01.webp", card: "/work/metal-beds/metal-beds-01-card.webp" },
@@ -105,6 +98,14 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/gypsum-ceiling/gypsum-ceiling-06.webp", card: "/work/gypsum-ceiling/gypsum-ceiling-06-card.webp" },
     { src: "/work/gypsum-ceiling/gypsum-ceiling-07.webp", card: "/work/gypsum-ceiling/gypsum-ceiling-07-card.webp" },
   ],
+  "suspended-ceiling": [
+    { src: "/work/suspended-ceiling/suspended-ceiling-01.webp", card: "/work/suspended-ceiling/suspended-ceiling-01-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-02.webp", card: "/work/suspended-ceiling/suspended-ceiling-02-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-03.webp", card: "/work/suspended-ceiling/suspended-ceiling-03-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-04.webp", card: "/work/suspended-ceiling/suspended-ceiling-04-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-05.webp", card: "/work/suspended-ceiling/suspended-ceiling-05-card.webp" },
+    { src: "/work/suspended-ceiling/suspended-ceiling-06.webp", card: "/work/suspended-ceiling/suspended-ceiling-06-card.webp" },
+  ],
   "roller-shutters": [
     { src: "/work/roller-shutters/roller-shutters-01.webp", card: "/work/roller-shutters/roller-shutters-01-card.webp" },
     { src: "/work/roller-shutters/roller-shutters-02.webp", card: "/work/roller-shutters/roller-shutters-02-card.webp" },
@@ -112,6 +113,7 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/roller-shutters/roller-shutters-04.webp", card: "/work/roller-shutters/roller-shutters-04-card.webp" },
     { src: "/work/roller-shutters/roller-shutters-05.webp", card: "/work/roller-shutters/roller-shutters-05-card.webp" },
     { src: "/work/roller-shutters/roller-shutters-06.webp", card: "/work/roller-shutters/roller-shutters-06-card.webp" },
+    { src: "/work/roller-shutters/roller-shutters-07.webp", card: "/work/roller-shutters/roller-shutters-07-card.webp" },
   ],
   "fencing-boundary-walls": [
     { src: "/work/fencing-boundary-walls/fencing-boundary-walls-01.webp", card: "/work/fencing-boundary-walls/fencing-boundary-walls-01-card.webp" },
@@ -125,9 +127,10 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/burglar-proofing/burglar-proofing-01.webp", card: "/work/burglar-proofing/burglar-proofing-01-card.webp" },
     { src: "/work/burglar-proofing/burglar-proofing-02.webp", card: "/work/burglar-proofing/burglar-proofing-02-card.webp" },
     { src: "/work/burglar-proofing/burglar-proofing-03.webp", card: "/work/burglar-proofing/burglar-proofing-03-card.webp" },
-    { src: "/work/burglar-proofing/burglar-proofing-04.webp", card: "/work/burglar-proofing/burglar-proofing-04-card.webp" },
-    { src: "/work/burglar-proofing/burglar-proofing-05.webp", card: "/work/burglar-proofing/burglar-proofing-05-card.webp" },
-    { src: "/work/burglar-proofing/burglar-proofing-06.webp", card: "/work/burglar-proofing/burglar-proofing-06-card.webp" },
+  ],
+  "steel-doors": [
+    { src: "/work/steel-doors/steel-doors-01.webp", card: "/work/steel-doors/steel-doors-01-card.webp" },
+    { src: "/work/steel-doors/steel-doors-02.webp", card: "/work/steel-doors/steel-doors-02-card.webp" },
   ],
   "steel-shelving": [
     { src: "/work/steel-shelving/steel-shelving-01.webp", card: "/work/steel-shelving/steel-shelving-01-card.webp" },
@@ -140,6 +143,7 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/pergola-shades/pergola-shades-02.webp", card: "/work/pergola-shades/pergola-shades-02-card.webp" },
     { src: "/work/pergola-shades/pergola-shades-03.webp", card: "/work/pergola-shades/pergola-shades-03-card.webp" },
     { src: "/work/pergola-shades/pergola-shades-04.webp", card: "/work/pergola-shades/pergola-shades-04-card.webp" },
+    { src: "/work/pergola-shades/pergola-shades-05.webp", card: "/work/pergola-shades/pergola-shades-05-card.webp" },
   ],
   "carport-shades": [
     { src: "/work/carport-shades/carport-shades-01.webp", card: "/work/carport-shades/carport-shades-01-card.webp" },
@@ -163,24 +167,16 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
   "curtain-wall": [
     { src: "/work/curtain-wall/curtain-wall-01.webp", card: "/work/curtain-wall/curtain-wall-01-card.webp" },
     { src: "/work/curtain-wall/curtain-wall-02.webp", card: "/work/curtain-wall/curtain-wall-02-card.webp" },
+    { src: "/work/curtain-wall/curtain-wall-03.webp", card: "/work/curtain-wall/curtain-wall-03-card.webp" },
+    { src: "/work/curtain-wall/curtain-wall-04.webp", card: "/work/curtain-wall/curtain-wall-04-card.webp" },
+    { src: "/work/curtain-wall/curtain-wall-05.webp", card: "/work/curtain-wall/curtain-wall-05-card.webp" },
+    { src: "/work/curtain-wall/curtain-wall-06.webp", card: "/work/curtain-wall/curtain-wall-06-card.webp" },
+    { src: "/work/curtain-wall/curtain-wall-07.webp", card: "/work/curtain-wall/curtain-wall-07-card.webp" },
   ],
   "construction-works": [
     { src: "/work/construction-works/construction-works-01.webp", card: "/work/construction-works/construction-works-01-card.webp" },
     { src: "/work/construction-works/construction-works-02.webp", card: "/work/construction-works/construction-works-02-card.webp" },
     { src: "/work/construction-works/construction-works-03.webp", card: "/work/construction-works/construction-works-03-card.webp" },
-  ],
-  "metal-fabrication": [
-    { src: "/work/metal-fabrication/metal-fabrication-01.webp", card: "/work/metal-fabrication/metal-fabrication-01-card.webp" },
-  ],
-  "signage-fabrication": [
-    { src: "/work/signage-fabrication/signage-fabrication-01.webp", card: "/work/signage-fabrication/signage-fabrication-01-card.webp" },
-    { src: "/work/signage-fabrication/signage-fabrication-02.webp", card: "/work/signage-fabrication/signage-fabrication-02-card.webp" },
-    { src: "/work/signage-fabrication/signage-fabrication-03.webp", card: "/work/signage-fabrication/signage-fabrication-03-card.webp" },
-    { src: "/work/signage-fabrication/signage-fabrication-04.webp", card: "/work/signage-fabrication/signage-fabrication-04-card.webp" },
-    { src: "/work/signage-fabrication/signage-fabrication-05.webp", card: "/work/signage-fabrication/signage-fabrication-05-card.webp" },
-    { src: "/work/signage-fabrication/signage-fabrication-06.webp", card: "/work/signage-fabrication/signage-fabrication-06-card.webp" },
-    { src: "/work/signage-fabrication/signage-fabrication-07.webp", card: "/work/signage-fabrication/signage-fabrication-07-card.webp" },
-    { src: "/work/signage-fabrication/signage-fabrication-08.webp", card: "/work/signage-fabrication/signage-fabrication-08-card.webp" },
   ],
   "security-doors": [
     { src: "/work/security-doors/security-doors-01.webp", card: "/work/security-doors/security-doors-01-card.webp" },
@@ -197,6 +193,16 @@ export const WORK_IMAGES: Record<string, WorkImage[]> = {
     { src: "/work/wall-cladding/wall-cladding-04.webp", card: "/work/wall-cladding/wall-cladding-04-card.webp" },
     { src: "/work/wall-cladding/wall-cladding-05.webp", card: "/work/wall-cladding/wall-cladding-05-card.webp" },
     { src: "/work/wall-cladding/wall-cladding-06.webp", card: "/work/wall-cladding/wall-cladding-06-card.webp" },
+  ],
+  "signage-fabrication": [
+    { src: "/work/signage-fabrication/signage-fabrication-01.webp", card: "/work/signage-fabrication/signage-fabrication-01-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-02.webp", card: "/work/signage-fabrication/signage-fabrication-02-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-03.webp", card: "/work/signage-fabrication/signage-fabrication-03-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-04.webp", card: "/work/signage-fabrication/signage-fabrication-04-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-05.webp", card: "/work/signage-fabrication/signage-fabrication-05-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-06.webp", card: "/work/signage-fabrication/signage-fabrication-06-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-07.webp", card: "/work/signage-fabrication/signage-fabrication-07-card.webp" },
+    { src: "/work/signage-fabrication/signage-fabrication-08.webp", card: "/work/signage-fabrication/signage-fabrication-08-card.webp" },
   ],
 };
 
